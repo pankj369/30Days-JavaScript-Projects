@@ -31,12 +31,12 @@ async function checkWeather(city) {
       weatherIcon.src = "images/rain.png";
     } else if (data.weather[0].main == "Drizzle") {
       weatherIcon.src = "images/drizzle.png";
-    } else if (data.wweather[0].main == "Mist") {
+    } else if (data.weather[0].main == "Mist") {
       weatherIcon.src = "images/mist.png";
     }
 
     document.querySelector(".weather").style.display = "block";
-    document.querySelector(".error").style.display = " none";
+    document.querySelector(".error").style.display = "none";
   }
 }
 
